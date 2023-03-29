@@ -5,6 +5,7 @@ plugins {
     id 'java-library'
 }
 
+apply from : "$rootProject.projectDir/dependencies.gradle"
 
 group = 'com.example.wikimediaProject'
 version = '0.0.1-SNAPSHOT'
@@ -21,8 +22,9 @@ repositories {
 }
 
 dependencies {
-
-    implementation 'org.springframework.kafka:spring-kafka'
+    api libs.web
+    api libs.kafka
+    api libs.lombok
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.kafka:spring-kafka-test'
 }

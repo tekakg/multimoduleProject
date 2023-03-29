@@ -22,11 +22,6 @@ repositories {
 }
 
 dependencies {
-
-    implementation libs.web
-    implementation libs.kafka
-    compileOnly libs.lombok
-    annotationProcessor libs.lombok
     implementation project (":common")
 }
 
