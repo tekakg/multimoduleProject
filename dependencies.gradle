@@ -1,0 +1,8 @@
+
+ext.libs = [
+        'lombok' : 'org.projectlombok:lombok',
+        'kafka' : 'org.springframework.kafka:spring-kafka',
+        'web' : 'org.springframework.boot:spring-boot-starter-web',
+        'starter-test' : 'org.springframework.boot:spring-boot-starter-test',
+        'kafka-test' : 'org.springframework.kafka:spring-kafka-test'
+]
